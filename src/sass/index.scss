@@ -1,0 +1,40 @@
+@import 'reset';
+@import 'padroes';
+@import 'quadrados';
+@import 'botao';
+
+body{
+  background-color: $black;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.titulo{
+  text-align: center;
+  margin: 1% 0;
+}
+.on{
+  color: $green;
+}
+.off{
+  color: $red;
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+
+  @media only screen and (max-width: $mobileM) {
+    .container{
+      margin: 0 0 0 0;
+    }
+}
+.subtitulo {
+  margin: 0 auto;
+}

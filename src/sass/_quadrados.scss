@@ -1,0 +1,83 @@
+.box{
+    display: flex;
+    flex: 1;
+    flex-grow: 0.1;
+    flex-basis: auto;
+    flex-shrink: 0;
+    margin: auto;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    border:solid 1px $grey;
+    }
+
+.yellow{
+    background: $yellow;
+    border-radius:70% 0 0 0 ;
+    
+}
+.purple{
+    background: $purple;
+    border-radius:0 0 70% 0 ;
+
+}
+.orange{
+    background: $orange;
+    border-radius:0 0 0 70%;
+    
+}
+.red{
+    background:$red;
+    border-radius:0 70% 0 0;
+
+}
+
+.glow{
+    border:none;
+    box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+        
+        &:nth-child(1) {
+            border-radius: 70% 0 0 0;
+        }
+        &:nth-child(2) {
+            border-radius: 0 70% 0 0;
+        }
+        
+}
+
+.keepBorder{
+    &:nth-child(1) {
+        border-radius: 0 0 0 70%;
+    }
+    &:nth-child(2) {
+        border-radius: 0 0 70% 0;
+    }
+}
+
+@media only screen and (min-width: $webXS) {
+    .box{
+        width: 280px;
+        height: 280px;
+    }   
+}
+
+@media only screen and (max-width: $mobileL) {
+    .box{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: $mobileS) {
+    .box{
+        width: 120px;
+        height: 120px;
+    }
+}

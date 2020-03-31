@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:600,900|Roboto+Mono&display=swap');
+$yellow:#FFC300;
+$purple:#571845;
+$orange:#FF5733;
+$red:#C70039;
+$green:#58F73B;
+$black:#121212;
+$cor-texto:#fff;
+$grey:#707070;
+
+$webXS: 1441px;
+$mobileL: 425px;
+$mobileM: 376px;
+$mobileS: 321px;
+
+*{
+    justify-content: center;
+}
+
+%texto {
+    font: 1000 5vh 'Muli', sans-serif;
+    flex: 1 1;
+    color: $cor-texto;
+    
+
+}
+h1{ 
+        @extend %texto;
+        font-size: 36px;
+}
+h2{ 
+        @extend %texto;
+        font-size: 24px;
+        color: $cor-texto;
+}
